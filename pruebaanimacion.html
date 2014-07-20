@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="animate.css">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<style>
+
+	body{
+		font: 100%/1.4 'Francois One', sans-serif, Arial, Helvetica, sans-serif ;
+
+	}
+	header{
+	margin:0 auto;
+	width:90%;
+	}
+	header>img{
+		width:100%;
+		height: 80px;
+		border-radius: 10%;
+
+	}
+
+	nav> ul >li{
+
+	float:left;
+	margin: 0;
+	padding: 0;
+
+
+}
+nav>ul{
+
+	list-style:  none;
+}
+
+
+nav> ul> li> a{
+display:block;
+background-color: #378FFF ;
+text-decoration: none;
+color: white;
+padding:7px 7px 7px 7px ;
+}
+
+nav{
+
+font-size: 17px;
+clear:both;
+background-color: #378FFF;
+height: 37px;
+width:100%;
+
+}
+
+nav >ul >li >a:hover{
+	background-color: #1471A0;
+}
+
+
+nav> ul> li >ul{
+list-style: none;
+margin: 0;
+padding: 0;
+position: fixed;
+
+}
+nav >ul >li >ul> li{
+
+display:none;
+
+
+}
+nav> ul> li:hover ul >li {
+display: block;
+
+
+}
+nav> ul> li> ul >li> a{
+display:block;
+background-color:#fff;
+text-decoration: none;
+color:black;
+padding:7px 7px 7px 7px ;
+box-shadow: 2px 2px 3px #bdc7d8;
+border-left:1px solid #777;
+border-right:1px solid #777;
+
+}
+
+nav> ul >li >ul >li:hover a{
+    background-color:#bdc7d8;
+}
+nav> ul >li >ul >li:first-child{
+
+    margin-left:10px;
+    border-bottom: 6px solid #777;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    height: 0;
+    width: 0;
+
+}
+
+nav >ul >li >ul >li:hover nav> ul> li> a{
+border-bottom: solid 2px black;
+}
+nav >ul >li >ul> li:last-child a{
+border-radius: 0 0 8px 8px;
+border-bottom:1px solid #777;
+
+}
+nav >ul >li >ul .primero a{
+ border-radius: 8px 8px 0 0;
+ border-left:1px solid #777;
+ border-right:1px solid #777;
+}
+
+nav>ul>li>a {
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+	<img src="imagenes/avatar.jpg" alt="">
+	</header>
+	<nav>
+	<ul>
+		<li><a href="">menu</a>
+				<ul>
+					<li></li>
+
+					<li class="primero"><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+				</ul>
+			</li>
+		<li><a href="">menu</a>
+				<ul>
+					<li></li>
+					<li class="primero"><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+				</ul>
+			 </li>
+		<li><a href="">menu	</a>
+
+				<ul>
+					<li></li>
+					<li class="primero"><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li><li>
+					<a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+				</ul>
+		</li>
+		<li><a href="">menu	</a>
+				<ul>
+					<li></li>
+					<li class="primero"><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li><li>
+					<a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+				</ul>
+			 </li>
+		<li><a href="">menu</a>
+				<ul>
+					<li></li>
+					<li class="primero"><a href="">submenu</a></li>
+					<li><a href="">submenu</a></li><li>
+					<a href="">submenu</a></li>
+					<li><a href="">submenu</a></li>
+				</ul>
+		</li>
+	</ul>
+	</nav>
+	<script>
+        $(document).on('ready',function(){
+        	$('nav>ul>li>a').hover(function(){
+        		$(this).addClass('zoomOutDown animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+	        	function(){
+				$(this).removeClass();
+	        	});
+        	});
+
+        });
+
+        $(window).load(function(){
+	        	$('body').addClass('zoomIn animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			        	function(){
+						$(this).removeClass();
+						});
+        		});
+
+
+          $(window).load(function(){
+	        	$('img').addClass('wobble animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			        	function(){
+						$(this).removeClass();
+						});
+        		});
+
+	</script>
+
+
+</body>
+</html>

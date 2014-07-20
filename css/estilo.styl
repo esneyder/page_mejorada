@@ -1,0 +1,834 @@
+	azul = #22BCE0
+	gris_oscuro = #f5f5f5
+	blanco_cabeza=#FFFFFF
+	gris_texto = #7A7A7A
+	naranja = #DD4F24
+	morado=#3D0392
+	color_link=#E409D9
+
+
+	@font-face {
+		font-family: 'iconitos';
+		src:url('../fonts/icomoon.eot');
+		src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),url('../fonts/icomoon.ttf') format('truetype'),url('../fonts/icomoon.woff') format('woff'),url('../fonts/icomoon.svg#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	/*
+	@font-face {
+		font-family: 'icomoon';
+		src:url('fonts-face/icomoon.eot?-jgp0w8');
+		src:url('fonts-face/icomoon.eot?#iefix-jgp0w8') format('embedded-opentype'),
+			url('fonts-face/icomoon.woff?-jgp0w8') format('woff'),
+			url('fonts-face/icomoon.ttf?-jgp0w8') format('truetype'),
+			url('fonts-face/icomoon.svg?-jgp0w8#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	*/
+
+	a
+		color naranja
+
+	body
+		//background #E8E8E8
+		//background-color #F9F9F9
+		background-color #FFFFFF
+
+		color gris_oscuro
+		font-family  Open Sans,Helvetica Neue,Arial,sans-serif
+		font-weight normal
+		letter-spacing normal
+		font-size 16px
+
+
+	footer
+		background #474441
+		color rgba(white,0.3)
+		padding .5em 0
+		text-align center
+		width 100%
+		clear both
+		position absolute
+
+
+
+
+		h3
+			font-size 14px
+			font-weight normal
+
+			strong
+				display block
+
+			.mejor
+				&:before
+				&:after
+					content " - "
+
+
+
+	header
+		background blanco_cabeza
+		color gris_texto
+		overflow hidden
+		width 82.5%
+		margin 0 auto
+		padding 0.5em
+		padding-top 15px
+		position relative
+		z-index 1
+
+
+
+		.logo
+			//border-right 1px solid azul
+			float left
+			margin-right 10px
+
+			img
+				width 100px
+
+
+		.titular
+			padding-top 15px
+			height 55px
+			width 70%
+			display inline-block
+			float left
+
+			.filtro
+				color azul
+				font-size 18px
+				font-weight normal
+				text-decoration none
+				float left
+
+
+			.buscador
+				 height 20px
+				 color gris_texto
+				 padding 2px 2px 2px 2px
+				 position relative
+				 width 200px
+				 margin-right 5px
+				 float left
+				 font-size 18px
+				 border 2px solid gris_oscuro
+				 border-radius 3px 3px 3px 3px
+
+			 	.txt-b
+
+					border none
+					color #777
+					font-size 18px
+					border-right 1px solid gris_oscuro
+					margin-right 5px
+					width 175px
+					online none
+					float left
+					height 19px
+					padding-bottom: 3px;
+				.btn-b
+					img
+						height 17px
+						width 16px
+
+
+				.btn-b
+					padding-top 2px
+					float left
+					height 22px
+
+			.siguenos
+				margin-left 20px
+				float left
+				height 30px
+				width 120px
+
+				.sep
+					width 29px
+					display inline-block
+					height 26px
+
+
+					.img-t
+
+							margin 0 auto
+							width 20px
+
+					.face img:hover
+						width 25px
+						transition 0 .5s
+						border-radius 2px
+						box-shadow 2px 2px 3px rgba(morado,.5)
+
+
+					.twit img:hover
+						width 25px
+						transition 0 .5s
+						box-shadow 2px 2px 3px rgba(azul,.5)
+
+					.goo img:hover
+						width 25px
+						transition 0 .5s
+						box-shadow 2px 2px 3px rgba(naranja,.5)
+
+			.titulo
+
+				font-size 18px
+				font-weight normal
+				margin 0
+				padding 0
+				width 30%
+				float left
+
+
+		.usuario
+
+			position relative
+			float right
+			width: 175px
+			text-align center
+
+			.desplegar
+				list-style none
+				background-color morado
+				padding 0.4em
+
+				li
+					display inline-block
+
+				li a
+					text-decoration none
+					color #eee
+
+				li ul
+					position fixed
+					margin 0
+					padding 0
+
+				li ul li
+					display none
+					color #eee
+
+
+
+				li ul li:first-child
+					width 0
+					height 0
+					border-bottom: 10px solid naranja
+					border-left: 10px solid transparent
+					border-right: 10px solid transparent
+					margin: 0 auto
+					padding 0.4em
+
+				li ul li:last-child
+					border-radius 0 0 0.5em 0.5em
+				li ul .primerli
+					border-radius 0.5em 0.5em 0 0
+
+			.desplegar li:hover ul li
+				left -6px
+				top: 8px
+				display block
+				background-color naranja
+				padding 0.5em
+				position relative
+				text-align left
+
+			.desplegar li:hover ul li:first-child
+				background-color transparent
+				padding 0
+
+			.avatar
+				top 0
+				left 85px
+				position absolute
+				z-index 2
+
+				img
+					width 50px
+					border-radius 50%
+
+
+
+
+			.flechita
+				margin-left 60px
+
+				&:after
+					content "\e602"
+					//display inline-block
+					font-family "iconitos"
+					text-shadow 1px 1px 0px black
+
+	        /*ul li
+	        	display inline-block
+
+		        .publicar
+					//display inline-block
+					//margin-top 15px
+					background morado
+					color white
+					//float right
+					//padding 0.2em 0.5em
+					//position relative
+					text-decoration none
+					text-shadow 1px 1px 0px black
+					//right 55px
+
+				.avatar
+					//right 12px
+					//position absolute
+					z-index 2
+
+					img
+						width 50px
+						border-radius 50%
+
+					&:before
+						display inline-block
+						content "\e600"
+						font-family "iconitos"
+						margin 0 3px 0 0
+
+				.flechita
+					color white
+					//left 105px
+					//position relative
+					//text-align right
+					text-decoration none
+					z-index 0
+
+
+					&:after
+						content "\e602"
+						display inline-block
+						font-family "iconitos"
+						text-shadow 1px 1px 0px black*/
+
+
+		    /*.deplegar
+
+		    	background orange
+				list-style-type none
+				height 22px
+				width 15px
+				float right
+
+				background morado
+
+			.deplegar br
+				display none
+
+			.desplegar li
+				padding-top 3px
+				//display block
+				list-style none*/
+
+
+
+
+			/*.desplegar li:first-child a
+				border-left none
+
+			.desplegar li:last-child a
+				border-right none
+
+			.desplegar li:hover > a
+				color yellow
+			.desplegar ul
+				height 100px
+				background-color orange
+				margin 0
+				display: none
+				//opacity 0
+				top 40px
+				//transition opacity .25s ease .1s
+
+
+
+
+
+
+			.desplegar li:hover > ul
+				//opacity 1
+				position fixed
+				display: block
+				right 100px
+
+
+
+			.desplegar ul li
+				background-color blue
+				height 0
+				display: inline-block
+				padding 0
+				transition height .25s ease .1s
+
+
+			.desplegar li:hover > ul li
+			    height 36px
+			    overflow visible
+			    padding 0 */
+
+
+
+
+
+
+	nav
+		background azul
+		border-left 10px solid white
+		position relative
+		//width 90.5%
+		width 100%
+		margin-top 12px
+		z-index 0
+
+
+		&:before
+			border-bottom 20px solid transparent
+			border-left 7px solid white
+			border-top 20px solid transparent
+			content ""
+			left 0
+			position absolute
+			top 0
+
+		.menu
+			height 40px
+			line-height 40px
+			margin 0
+			padding 0
+			overflow-x auto
+			overflow-y hidden
+			white-space nowrap
+
+			li
+				display inline-block
+
+				a
+					color #34485E
+					display block
+					margin 0 0.5em
+					padding 0 0.2em
+					text-decoration none
+
+
+
+
+
+	.posts
+		padding 0.5em
+		position relative
+		width 84%
+		margin 0 auto
+
+
+		.post
+			background white
+			border-radius 0 0 0.5em 0.5em
+			border 2px solid gris_oscuro
+			padding-bottom 5px
+
+
+			//box-shadow 10px 10px 10px rgba(black, 0.5)
+			color black
+			margin-bottom 1em
+
+
+		.post:hover
+				background white
+				border-radius 0 0 0.5em 0.5em
+				box-shadow 10px 10px 20px rgba(black, 0.1)
+				color black
+				margin-bottom 1em
+				transition: all .3s ease-in-out
+
+				//backface-visibility hidden
+
+
+
+			.acciones
+				border-top 3px solid azul
+				padding 0.5em
+				//overflow hidden
+
+				.datos
+					float right
+
+
+					.comentarios
+						background gris_texto
+						border-radius 3px
+						color white
+						margin 0 1em 0 0
+						padding 2px 5px
+						text-decoration none
+
+					.estrellita
+						text-decoration none
+
+						&:after
+							font-family "iconitos"
+							color #E0D561
+							content "\e601"
+				.social
+					width 50%
+					margin 0 auto
+					height 5px
+
+
+
+
+
+
+				.votos
+					float left
+					display inline-block
+
+					.down
+					.up
+						text-decoration none
+
+					.down
+						color red
+
+						&:before
+							font-family "iconitos"
+							font-size 1.5em
+							content "\e602"
+							vertical-align bottom
+
+					.up
+						color green
+						&:before
+							font-family "iconitos"
+							font-size 1.5em
+							content "\e603"
+							vertical-align bottom
+
+			.descripcion
+				color gris_texto
+
+
+	           	.cabtitulo
+						background gris_oscuro
+						width 100%
+
+
+
+						.titulo
+							color gris_texto
+							margin-top 0 !important
+							margin 5px 10px 0 8px
+							font-size 18px
+							font-weight normal
+							padding-top 10px
+				        .tag
+							//background azul
+							border-radius 0.2em
+							color gris_texto
+							padding 0.2em 0.5em
+							text-decoration none
+							float right
+							margin -25px 3em 0 0
+				.detalles
+					height 128px
+					margin-left 130px
+
+					.resumen
+						text-align justify
+						margin-top 20px
+						margin-right 15px
+
+
+					.detinfo
+						background white
+						margin-top 5px
+						margin 10px
+
+
+						.autor
+							text-decoration none
+							display inline-block
+
+						.fecha
+							float right
+
+
+
+
+
+				.imagen
+					float left
+
+					img
+						height 140px
+						vertical-align top
+						width 120px
+						margin-bottom .5em
+
+
+
+
+
+
+
+	@media screen and (min-width: 768px)
+
+		header
+			.titular
+				.publicar
+					padding-left 3em
+					position relative
+
+					&:before
+						left 0px
+						font-size 2.5em
+						position absolute
+						top -10px
+
+		.posts
+			.post
+				display inline-block
+				width 48%
+				vertical-align top
+				&:nth-child(odd)
+					margin-right 2%
+
+
+
+	/*formulario login*/
+	.contenido
+		background #FFFFFF
+		border-radius 3px
+		margin 0 auto
+		margin-top 20px
+
+
+		.frmlogin
+			background #ededed
+			border solid 1px #dddddd
+			margin-top 30px
+			width 35%
+			margin 0 auto
+
+
+
+
+
+			.lblogin
+				color #555
+				display inline-block
+				margin-left 18px
+				padding-top 20px
+				width 100px
+				font-size 16px
+				float left
+
+				.lblog
+					color #c7d0d2
+					font-family "Helveltica Neue",Helveltica,sans-serif
+					font-size 20px
+
+
+			.txtlogin
+				font-family "Helveltica Neue",Helveltica,sans-serif
+				font-size 14px
+				margin-left 20px
+
+
+				.txtusu
+					border 1px solid #c7d0d2
+					border-radius 3px
+					box-shadow inset 0 1.5px 3px rgba(190,190,190,.4), 0 0 0 5px #f5f7f8
+					color #777
+					font-size 18px
+					padding-left 10px
+					margin 15px
+					margin-top 12px
+					margin-left 18px
+					width 290px
+					height 35px
+					online none
+				.txtpass
+					border 1px solid #c7d0d2
+					border-radius 3px
+					box-shadow inset 0 1.5px 3px rgba(190,190,190,.4), 0 0 0 5px #f5f7f8
+					color #777
+					font-size 18px
+					padding-left 10px
+					margin 10px
+					margin-top 12px
+					margin-left 18px
+					width 290px
+					height 35px
+
+
+			.lower
+				background  #C0C0C0
+				width 100%
+				height 69px
+				margin-top 20px
+				color gris_texto
+			input[type=checkbox]
+				margin-left 20px
+				margin-top 30px
+
+			.btnlogin
+
+
+				display inline
+                right 0
+
+				.btn-lg
+
+					height 30px
+
+
+
+            .opciones
+
+				padding-top 10px
+				display inline-block
+				margin-left 60px
+
+				.regis
+					text-decoration none
+		    .tlogin
+				color #c7d0d2
+				margin-top 20px
+				text-align center
+
+
+
+
+			.op-log
+				position relative
+				width 100%
+				height 80px
+				text-align center
+
+				.login-face
+					 background #6B63D8
+					 display inline-block
+					 margin-top 20px
+
+
+					 .lfac
+					 	color gris_oscuro
+					 	text-decoration none
+
+
+			    .logingoogle
+			    	background #FF7533
+
+			    	margin-top 20px
+			    	display inline-block
+
+
+
+
+
+
+
+
+//formulario registro usuario
+
+	.formregistro
+	background #FFFFFF
+	border-radius 10px
+	position relative
+	margin-bottom 1em
+	margin-top 20px
+	width 80%
+	height 60%
+	top 30%
+	left 20%
+
+		.frmregistro
+			 white 35%
+			 background width
+
+			.lbform
+				color #555
+				display inline-block
+				margin-left 18px
+				padding-top 20px
+				width 170px
+				font-size 16px
+				float left
+
+				.lb
+					color #c7d0d2
+					font-family "Helveltica Neue",Helveltica,sans-serif
+					font-size 16px
+
+			.txtform
+				font-family "Helveltica Neue",Helveltica,sans-serif
+				font-size 14px
+				margin-left 20px
+
+				.txt
+					border 1px solid #c7d0d2
+					border-radius 3px
+					box-shadow inset 0 1.5px 3px rgba(190,190,190,.4), 0 0 0 5px #f5f7f8
+					color #777
+					font-size 18px
+					padding-left 10px
+					margin 15px
+					margin-top 12px
+					margin-left 18px
+					width 290px
+					height 30px
+					online none
+
+					datalist
+						color #777
+
+						.lis
+							font-size 18px
+
+
+
+
+			.botones
+				margin-left 20px
+				.btn-registro
+					background naranja
+					border-radius 3px
+					color #FFFFFF
+					margin-left 35%
+					font-size 20px
+					font-style normal
+					margin-top 20px
+					width 100px
+					height 40px
+
+
+
+
+	.redes
+
+		width: 45px;
+		height: 220px;
+		background-color: #0e6aa8;
+		border-radius: 5px;
+		position: fixed;
+		top: 37%;
+		left: 0;
+		left: calc((100% - 1015px)/2 - 55px);
+	/*
+		div
+			img
+				padding-top 15px
+				width 44px
+
+				*/
+
+
+
+
