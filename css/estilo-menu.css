@@ -12,17 +12,27 @@ body{background-color:#FFF;
 body header{
 	background: #004040;
 	border-bottom: solid 3px #e33d25;
-	width:100%;
+	width:100%; /*adaptar a width:87%;*/
 	height:3.75em;
 	position:fixed;
 	top:0;
 	left:0;
 
+	z-index: 10;
+	/*-webkit-transform: translateX(10em);
+	transform: translateX(10em);*/
+
+	  /*propiedad OBLIGADA //// left:10.8em;*/
+
 }
 body header .header-container{
-	width:95%;
+	width:80%;
 	max-width:65em;
-	margin:0 auto
+	margin:0 auto;
+	height: 100%;
+	clear: both;
+
+
 }
 body header .header-container .menu-button{
 	background-color:#e33d25;
@@ -51,7 +61,7 @@ body header .header-container .menu-button{
     vertical-align: middle;
 }
 .logo{
-	background-color:
+
    display:  block;
    float: left;
    height: 3.5em;
@@ -107,14 +117,136 @@ margin-top: 2px;
 .txt-search:focus{
 	outline: 0;
 }
-.fr-login{
-	background-color: orange;
-    display:block;
-padding:0.1em;
-float:left;
-margin:1.1em .20em;
-height: 22px;
 
+.login-button{
+ 	background-color:#e33d25;
+	border-radius:3px;
+	color:#fff;
+	padding:.25em .625em;
+	text-decoration:none;
+	transition:background .35s ease-in,color .35s ease-in;
+	float: right;
+	margin: 0.75em;
 
+ }
+ .login-button:hover{
+ 	background: #e6513c;
+ 	text-shadow: 0 0 2px #fff;
+ 	color: #dedcc2;
+ }
+.login-button img{
+	float:left;
+}
+ .text-login{
+ 	display: block;
+ 	float:left;
+    margin: 6px 0;
 
+ }
+ .nav-menu{
+
+ 	background-color: #004040;
+ 	left:0;
+ 	position:fixed;
+ 	top:0;
+ 	height:100%;
+ 	overflow-x:hidden;
+ 	overflow-y:scroll;
+ 	z-index: 1;
+    width:190px;
+    display:none;/* activar el nav en function click*/
+
+ }
+/*menu lista ul*/
+ .nav-menu >ul{
+    clear:both;
+ 	list-style: none;
+ 	margin:0;
+ 	padding: 0;
+
+   /*font-weight: 300;*/
+    font-size: 20px;
+
+ }
+ .nav-menu >ul> li{
+
+    background:#e33d25;
+ }
+ .nav-menu >ul> li> a{
+     border-top: 1px solid #eb4e15;
+     border-bottom: 1px solid #cd3e0a;
+ 	 display:block;
+     color: white;
+     text-decoration: none;
+     vertical-align: middle;
+     /*text-transform: uppercase*/
+    padding: .5em 1em;
+}
+/*icomo menu /home/atras*/
+ .nav-menu >ul>li>a>img{
+
+  display:inline-block;
+  vertical-align:top;
+
+ }
+ .nav-menu>ul>li>a>span{
+
+ 	display: inline-block;
+    margin: 6px 0;
+ }
+
+/*-----------------sub-menu-----------------------*/
+
+ .nav-menu >ul>li> ul{
+ 	background-color:#004040;
+ 	list-style: none;
+ 	margin:0;
+ 	padding:0;
+ 	height:100%;
+ 	position:absolute;
+ 	/*display:none;*/
+     top:59px;
+ }
+/*----ocultar bottom atras------*/
+.nav-menu >ul> li:first-child a {
+    background-color:#BB3D00;
+ 	 display:none; /*activar link atras*/
+
+ }
+
+.nav-menu >ul> li> ul> li:first-child a{ /*li el precionado, por defecto*/
+	 background-color:#e33d25;
+     border-top: 1px solid #e33d25;
+     border-bottom: 1px solid #e33d25;
+ 	 display:block;
+     color: white;
+     text-decoration: none;
+     vertical-align: middle;
+     /*text-transform: uppercase*/
+     padding: .5em 1em;
+}
+
+.nav-menu >ul> li> ul> li>a{
+	 background-color:#693991;
+     border-top: 1px solid #7D44AC;
+     border-bottom: 1px solid #5C327E;
+ 	 display:block;
+     color: white;
+     text-decoration: none;
+     vertical-align: middle;
+     /*text-transform: uppercase*/
+     padding: .5em 1em;
+}
+
+/*contenidos, cuerpo postst*/
+.contenido{
+	background-color:#FFFFFF;
+    /*propiedad OBLIGADA A TRABAJAR//// padding-left:180px;*/
+
+}
+.post{
+	background: url('../imagenes/background.png');
+    max-width: 64.5em;
+    margin: 0 auto;
+    height:1500px;
 }
